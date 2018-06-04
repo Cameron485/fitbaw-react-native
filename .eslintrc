@@ -1,0 +1,91 @@
+{
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": [
+            2,
+            4
+        ],
+        "react/jsx-indent": [
+            2,
+            4
+        ],
+        "react/jsx-indent-props": [
+            2,
+            4
+        ],
+        "max-len": [
+            2,
+            120
+        ],
+        "class-methods-use-this": 0,
+        "compat/compat": 2,
+        "function-paren-newline": [
+            "error",
+            "consistent"
+        ],
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allow": [
+                    "__typename"
+                ]
+            }
+        ],
+        "jsx-a11y/anchor-is-valid": [
+            "error",
+            {
+                "components": [
+                    "Link"
+                ],
+                "specialLink": [
+                    "to"
+                ],
+                "aspects": [
+                    "noHref"
+                ]
+            }
+        ],
+        "graphql/no-deprecated-fields": [
+            "warn"
+        ],
+        "graphql/named-operations": [
+            "error"
+        ],
+        "graphql/template-strings": [
+            "error",
+            {
+                "validators": "all",
+                "tagName": "gql"
+            }
+        ]
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "jest": true
+    },
+    "plugins": [
+        "compat",
+        "graphql",
+        "react",
+        "react-native"
+    ],
+    "globals": {
+        "GAME_FILE_PATH": "",
+        "GRAPHQL_URL": "http://localhost:3001/graphql",
+        "NODE_ENV": "",
+        "PUBLIC_GRAPHQL_URL": "http://localhost:3001/graphql",
+        "PRODUCT_CODE": "",
+        "QUIZ_FILE_PATH": "",
+        "URL_PATH_PREFIX": ""
+    },
+    "settings": {
+        "polyfills": [
+            "promises"
+        ]
+    },
+    "ecmaFeatures": {
+        "jsx": true
+    }
+}
