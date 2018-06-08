@@ -1,5 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Platform, StatusBar } from 'react-native';
+import { TabNavigator, StackNavigator } from 'react-navigation';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 
 export default class App extends React.Component {
   render() {
